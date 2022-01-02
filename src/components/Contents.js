@@ -59,12 +59,7 @@ function Contents() {
 
   return (
     <Wrapper>
-      <Background>
-        {/* <Timer time={time} /> */}
-        {/* <Minting /> */}
-        {time > 0 ? <Timer time={time} /> : <Minting />}
-        {/* <ButtonTest>SET TIME</ButtonTest> */}
-      </Background>
+      <Background>{time > 0 ? <Timer time={time} /> : <Minting />}</Background>
     </Wrapper>
   );
 }

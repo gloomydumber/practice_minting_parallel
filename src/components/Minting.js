@@ -1,4 +1,4 @@
-import HCaptcha from "@hcaptcha/react-hcaptcha";
+// import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import corepackImg from "../img/corepack.gif";
@@ -211,11 +211,12 @@ function Minting() {
   const [token, setToken] = useState(null);
   const [startTimer, setStartTimer] = useState(new Date());
   const [resultTime, setResultTime] = useState(null);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setEnded(true);
-  //   }, 30000);
-  // }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setEnded(true);
+    }, 45000);
+  }, []);
 
   useEffect(() => {
     setResultTime(msToTime(new Date() - startTimer));
