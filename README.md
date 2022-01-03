@@ -4,12 +4,13 @@ NFT Minting UI 및 UX를 react를 rough하게 구현하고 heroku에 배포
 
 NFT Minting 과정이 어떠한지 대략적으로 참고하도록 구현
 
+https://teamlvrmintingtrainer.herokuapp.com/
+
 ## captcha 도입
 
 ```json
     "@hcaptcha/react-hcaptcha": "^1.0.0",
     "react-google-recaptcha": "^2.1.0",
-    "styled-components": "^5.3.3",
 ```
 
 hcaptcha와 google recaptcha가 객체하나를 공유해서 동시에 같이 쓰는 데 문제가 있음
