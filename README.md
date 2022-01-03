@@ -6,6 +6,16 @@ NFT Minting 과정이 어떠한지 대략적으로 참고하도록 구현
 
 https://teamlvrmintingtrainer.herokuapp.com/
 
+## detail
+
+1. 1~9초의 랜덤 초(seconds) 후에 minting page 생성
+
+2. SET MAX 버튼을 통해 민팅 수량 최대 설정, hCaptcha 성공 시 minting button 활성화
+
+3. 45초 내로 민팅하지 않으면 우측 하단에 매진 되었음을 표시
+
+4. minting button 클릭 시, minting에 걸린 시간 표기
+
 ## captcha 도입
 
 ```json
