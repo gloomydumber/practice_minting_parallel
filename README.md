@@ -1,6 +1,6 @@
 # practice_minting_parallel
 
-NFT Minting UI 및 UX를 react를 rough하게 구현하고 heroku에 배포
+NFT Minting UI 및 UX를 react로 rough하게 구현하고 heroku에 배포
 
 NFT Minting 과정이 어떠한지 대략적으로 참고하도록 구현
 
