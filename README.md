@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# practice_minting_parallel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NFT Minting UI 및 UX를 react를 rough하게 구현하고 heroku에 배포
 
-## Available Scripts
+NFT Minting 과정이 어떠한지 대략적으로 참고하도록 구현
 
-In the project directory, you can run:
+## captcha 도입
 
-### `npm start`
+```json
+    "@hcaptcha/react-hcaptcha": "^1.0.0",
+    "react-google-recaptcha": "^2.1.0",
+    "styled-components": "^5.3.3",
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+hcaptcha와 google recaptcha가 객체하나를 공유해서 동시에 같이 쓰는 데 문제가 있음
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+해결 방안 고민 필요
 
-### `npm test`
+## Need to Update
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+web3.js를 이용해 ETH test net이나 Solana 네트워크 등과의 연결을 통해 Minting 하는 방식의 경우도 경험할 수 있도록 구현
 
-### `npm run build`
+_useState_, _useMemo_, _useEffect_ 등을 좀 더 효과적으로 사용할 수 있어야 함
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### takeaway
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+첫 번째로 휘갈겨 쓴 리액트 초미니 프로젝트
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+본인 부족으로 react로 해도 지저분 함...
 
-### `npm run eject`
+컴포넌트 간 상태 관리에 대한 경험이 없어서 바로 recoil을 쓰고싶어졌음..
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+여러 프로젝트를 구현해 보고 상태관리에 대한 경험을 쌓아야 함
